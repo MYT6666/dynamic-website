@@ -63,3 +63,6 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`服务器运行在 http://localhost:${PORT}`);
 });
+
+// 导出应用，供Vercel使用
+module.exports = app;
