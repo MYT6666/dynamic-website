@@ -1,0 +1,12 @@
+<% 
+    const title = '错误页面';
+    const errorMessage = message || '发生了未知错误';
+    const body_content = `
+        <div class="error-container">
+            <h2>出错了！</h2>
+            <p>${errorMessage}</p>
+            <a href="/" class="back-home">返回首页</a>
+        </div>
+    `;
+%>
+<%- include('layout', { title, body_content }) %>

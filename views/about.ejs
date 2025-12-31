@@ -1,0 +1,28 @@
+<% 
+    const title = '关于我们';
+    const body_content = `
+        <h2>关于我们</h2>
+        <div class="about-content">
+            <h3>网站介绍</h3>
+            <p>这是一个基于Node.js和Express框架构建的动态网站，无需数据库即可运行。</p>
+            <p>我们使用EJS模板引擎来生成动态内容，通过JavaScript对象模拟数据，实现了一个功能完整的博客系统。</p>
+            
+            <h3>技术栈</h3>
+            <ul>
+                <li>Node.js - 服务器端JavaScript运行环境</li>
+                <li>Express - Web应用框架</li>
+                <li>EJS - 嵌入式JavaScript模板引擎</li>
+                <li>HTML5 & CSS3 - 前端技术</li>
+            </ul>
+            
+            <h3>功能特点</h3>
+            <ul>
+                <li>文章列表展示</li>
+                <li>文章详情页</li>
+                <li>联系表单</li>
+                <li>响应式设计</li>
+            </ul>
+        </div>
+    `;
+%>
+<%- include('layout', { title, body_content }) %>

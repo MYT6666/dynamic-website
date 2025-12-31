@@ -1,0 +1,17 @@
+<% 
+    const title = post.title;
+    const body_content = `
+        <article class="post-detail">
+            <h2>${post.title}</h2>
+            <div class="post-meta">
+                <span>作者：${post.author}</span>
+                <span>日期：${post.date}</span>
+            </div>
+            <div class="post-content">
+                <p>${post.content}</p>
+            </div>
+            <a href="/" class="back-link">返回首页</a>
+        </article>
+    `;
+%>
+<%- include('layout', { title, body_content }) %>
